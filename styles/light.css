@@ -21,8 +21,7 @@
 
   --link-shadow-color: #ff8dcb;
   --link-hover-color: rgba(53, 52, 48, 0.4);
-}
-.page.theme_light {
+
   background-image: url("../images/cover-image-light.png");
 }
 .page.theme_light .decor-element {

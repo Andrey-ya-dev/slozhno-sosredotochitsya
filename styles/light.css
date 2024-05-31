@@ -22,7 +22,7 @@
   --link-shadow-color: #ff8dcb;
   --link-hover-color: rgba(53, 52, 48, 0.4);
 
-  background-image: url("../images/cover-image-light.png");
+  --bg-img: url("../images/cover-image-light.png");
 }
 .page.theme_light .decor-element {
   display: none;
@@ -42,9 +42,8 @@
 
     --link-shadow-color: #ff8dcb;
     --link-hover-color: rgba(53, 52, 48, 0.4);
-  }
-  .page {
-    background-image: url("../images/cover-image-light.png");
+
+    --bg-img: url("../images/cover-image-light.png");
   }
   .decor-element {
     display: none;

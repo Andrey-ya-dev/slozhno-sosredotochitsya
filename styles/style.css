@@ -11,9 +11,9 @@
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 
-  background-image: url("../images/cover-image-dark.png");
-  background-position: center;
+  background-image: var(--bg-img);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -126,6 +126,10 @@
   font-weight: var(--font-weight-700);
 }
 @media (min-width: 768px) {
+  .page {
+    gap: 60px;
+    overflow-x: hidden;
+  }
   .header {
     grid-template-rows: 18rem 27.25rem 21.3125rem;
     padding-inline-start: 0;
@@ -217,9 +221,6 @@
   outline: 1px solid var(--text-content-color);
 }
 @media (min-width: 768px) {
-  .page {
-    gap: 60px;
-  }
   .main {
     gap: 80px;
     padding-inline: 20px;

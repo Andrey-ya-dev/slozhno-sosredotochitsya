@@ -11,6 +11,7 @@
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 
+  background-color: var(--bg-color);
   background-image: var(--bg-img);
   background-repeat: no-repeat;
   background-position: center;

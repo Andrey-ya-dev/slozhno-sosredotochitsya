@@ -23,6 +23,7 @@
   --shadow-color: #ff0070;
 
   --bg-img: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
 }
 .page.theme_dark .decor-element {
   display: flex;

@@ -1,4 +1,7 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой.
+
+Поменять у хедера расположение елементов 1fr (min-content minh) 1fr
+*/
 
 .page {
   display: grid;
@@ -212,11 +215,14 @@
 .section__article-subtitle {
   font-size: var(--main-font-size);
 }
+.section__article-subtitle {
+  font-weight: var(--font-weight-400);
+}
 .section__article-link {
   text-shadow: 2px 1px 0 var(--link-shadow-color);
 }
 .section__article-link:hover {
-  text-decoration: underline;
+  box-shadow: 0 1px 0 var(--text-content-color);
 }
 .section__article-link:focus-visible {
   outline: 1px solid var(--text-content-color);

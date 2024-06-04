@@ -28,11 +28,13 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 15.5rem 10.875rem 15.185rem;
+  /* grid-template-rows: 15.5rem 10.875rem 15.185rem; */
+  grid-template-rows: 1fr min-content 1fr;
   justify-items: center;
   align-items: center;
   padding-inline: 10px;
-  inline-size: 375px;
+  /* min-inline-size: 375px; */
+  /* inline-size: calc(100vi - 20px); */
   min-block-size: 669px;
   block-size: 100vh;
 }
@@ -88,6 +90,7 @@
 /* decor elem end*/
 .header__theme-menu {
   justify-self: end;
+  margin-block-start: 8px;
 }
 .header__theme-menu-list {
   display: grid;
@@ -125,20 +128,24 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   text-shadow: 4px 4px 0 var(--shadow-color);
+  /* max-inline-size: 567px; */
 }
 .header__description {
   font-weight: var(--font-weight-700);
+  /* max-inline-size: 490px; */
+  margin-block-end: 12px;
 }
 @media (min-width: 768px) {
   .page {
     gap: 60px;
-    overflow-x: hidden;
   }
   .header {
-    grid-template-rows: 18rem 27.25rem 21.3125rem;
+    /* grid-template-rows: 18rem 27.25rem 21.3125rem; */
     padding-inline-start: 0;
     padding-inline-end: 20px;
-    inline-size: 768px;
+    /* padding-inline: 20px; */
+    /* min-inline-size: 768px; */
+    /* inline-size: calc(100vi - 17px); */
     min-block-size: 1024px;
   }
   .decorated-zone::before {
@@ -154,28 +161,34 @@
     inset-inline-end: 30px;
   }
   .header__theme-menu {
-    align-self: end;
+    align-self: center;
+    margin-block-start: 16px;
   }
   .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     justify-self: start;
+    max-inline-size: none;
   }
   .header__description {
     justify-self: end;
-    align-self: start;
+    align-self: center;
+    margin-block-end: 19px;
     max-inline-size: 364px;
   }
 }
 @media (min-width: 1024px) {
   .header {
-    grid-template-rows: 15.5rem 14.75rem 8.125rem;
-    padding-block-start: 20px;
+    grid-template-rows: 1fr min-content 1fr;
+    /* padding-block-start: 20px; */
     min-block-size: 768px;
-    inline-size: 1024px;
+    /* inline-size: 1024px; */
   }
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin: 0;
     margin-inline-start: 20px;
+    margin-block-start: 20px;
   }
   .header__theme-menu-list {
     display: flex;
@@ -185,8 +198,9 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header__description {
-    align-self: end;
+    align-self: center;
     max-inline-size: 491px;
+    margin-block-end: 4px;
   }
 }
 /* main */
@@ -194,7 +208,7 @@
   display: grid;
   gap: 50px;
   padding-inline: 10px;
-  inline-size: 375px;
+  /* min-inline-size: 375px; */
 }
 .section,
 .section__content {
@@ -231,7 +245,8 @@
   .main {
     gap: 80px;
     padding-inline: 20px;
-    inline-size: 768px;
+    /* min-inline-size: 768px; */
+    /* inline-size: calc(100vi - 17px); */
   }
   .section {
     grid-template-columns: 1fr 2fr;
@@ -248,7 +263,7 @@
   }
   .section__content-galery {
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
   }
 
   .section__content-galery picture:first-child {
@@ -269,7 +284,7 @@
 }
 @media (min-width: 1024px) {
   .main {
-    inline-size: 1024px;
+    /* inline-size: 1024px; */
   }
   .section__title {
     max-inline-size: 314px;
@@ -290,7 +305,7 @@
   justify-items: center;
   align-items: center;
   padding-inline: 10px;
-  inline-size: 375px;
+  /* min-inline-size: 375px; */
   min-block-size: 669px;
   block-size: 100vh;
 }
@@ -301,19 +316,14 @@
 @media (min-width: 768px) {
   .footer {
     padding-inline: 20px;
-    inline-size: 768px;
+    /* min-inline-size: 768px; */
+    /* inline-size: calc(100vi - 17px); */
     min-block-size: 1024px;
-  }
-  .footer.decorated-zone::before {
-    inset-block-start: 0;
-  }
-  .footer.decorated-zone::after {
-    inset-block-end: 40px;
   }
 }
 @media (min-width: 1024px) {
   .footer {
-    inline-size: 1024px;
+    /* inline-size: 1024px; */
     min-block-size: 768px;
   }
 }
